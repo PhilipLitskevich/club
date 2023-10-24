@@ -17,6 +17,7 @@ let burgerLinks = document.querySelectorAll(".menu-burger__item > a");
 for (let i=0; i< burgerLinks.length; i++ ) {
     burgerLinks[i].onclick = function () {
         menuBurger.classList.remove('active');
+        burgerButton.classList.remove('active');
         document.getElementById(burgerLinks[i].getAttribute("data-link")).scrollIntoView({ behavior: "smooth" }); 
     }
 }
